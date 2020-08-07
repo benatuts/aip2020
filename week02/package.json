@@ -1,0 +1,14 @@
+{
+  "name": "week02",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "pingpong": "node pingpong.js",
+    "global": "node pingpong_global.js",
+    "session": "node pingpong_session.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "express-session": "*"
+  }
+}
