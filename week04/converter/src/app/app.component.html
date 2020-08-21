@@ -1,0 +1,7 @@
+<div class="container">
+  <app-header
+    [converterNames]="converterNames"
+    [(index)]="selectedIndex"
+  ></app-header>
+  <app-converter [converter]="converters[selectedIndex]"></app-converter>
+</div>

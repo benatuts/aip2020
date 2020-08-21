@@ -1,0 +1,6 @@
+<div *ngIf="guesses.length > 0">
+    Your guesses:
+    <ul>
+        <app-guess-item *ngFor="let item of guesses" [value]="item"></app-guess-item>
+    </ul>
+</div>

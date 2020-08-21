@@ -1,0 +1,5 @@
+<h1>Technology guessing game</h1>
+<p>Status: {{status}}</p>
+<p>Next guess: <input type="text" [(ngModel)]="guess"></p>
+<p><button (click)="check()">Check</button></p>
+<app-guess-list [guesses]="guesses()"></app-guess-list>

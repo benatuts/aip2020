@@ -1,0 +1,27 @@
+<div class="m-3">
+  <div class="form-group row">
+    <label for="from" class="col-sm-2 col-form-label">{{
+      converter.from
+    }}</label>
+    <div class="col-sm-6">
+      <input type="number" class="form-control" id="from" [(ngModel)]="from" />
+    </div>
+  </div>
+  <div class="form-group">
+    <button type="button" class="btn btn-primary" (click)="onClickConvert()">
+      Convert
+    </button>
+  </div>
+  <div class="form-group row">
+    <label for="to" class="col-sm-2 col-form-label">{{ converter.to }}</label>
+    <div class="col-sm-6">
+      <input
+        type="number"
+        class="form-control-plaintext"
+        id="to"
+        readonly
+        [value]="to"
+      />
+    </div>
+  </div>
+</div>

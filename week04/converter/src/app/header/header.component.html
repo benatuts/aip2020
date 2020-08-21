@@ -1,0 +1,14 @@
+<h1 class="m-3">Imperial to Metric Converter</h1>
+<hr />
+<div class="m-3">
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label
+      class="btn btn-secondary"
+      *ngFor="let converterName of converterNames; index as i"
+      [ngClass]="{ active: index === i }"
+      (click)="onChangeConverter(i)"
+    >
+      {{ converterName }}
+    </label>
+  </div>
+</div>
