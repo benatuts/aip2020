@@ -1,5 +1,5 @@
 const fs = require('fs').promises;
-const prompt = require('./prompt');
+const prompt = require('../prompt');
 
 async function run() {
     let l = await fs.open('log.txt', 'a');    

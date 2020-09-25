@@ -2,6 +2,10 @@
   "name": "week08",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/0_start/index.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "mocha": "^8.1.3"
   }
 }
