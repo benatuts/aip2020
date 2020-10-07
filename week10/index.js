@@ -30,7 +30,6 @@ app.get('/api/ping', (_req, res) => {
 app.get('/api/slow1', (_req, res) => {
     let start = getSeconds();
 
-    console.log(start);
     let elapsed = 0;
     do {
         elapsed = getSeconds() - start;
